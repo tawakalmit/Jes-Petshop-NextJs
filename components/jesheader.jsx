@@ -1,10 +1,10 @@
 import Head from "next/head"
 
-export default function Jesheader() {
+export default function Jesheader({judul}) {
   return (
     <div>
     <Head>
-      <title>Jes Petshop</title>
+      <title>{judul}</title>
       <link rel='icon' href='/jes_icon.png' />
     </Head>
     </div>
