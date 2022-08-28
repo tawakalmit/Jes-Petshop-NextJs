@@ -16,13 +16,12 @@ export default function Navbar({menu_kiri, page}) {
     <div className="bg-[#ecf0f1] w-full h-14 shadow-md">
         <div className="w-10/12 h-full items-center flex justify-between mx-auto">
         {menu_kiri}
-        <div className="w-fit h-fit flex items-center ">
             <h1 className="font-semibold text-[#2c3e50] mr-5 ">{page}</h1>
             <Menu>
             <Menu.Button>
             <GiHamburgerMenu size={30} color="#2c3e50" />
             </Menu.Button>
-            <Menu.Items className='p-3 absolute right-9 top-14 w-fit bg-[#ecf0f1] z-50 shadow-md md:relative'>
+            <Menu.Items className='p-3 absolute right-9 top-14 w-fit bg-[#ecf0f1] z-50 shadow-md md:right-20'>
               <Menu.Item>
                 {({ active }) => (
                   <div>
@@ -56,7 +55,6 @@ export default function Navbar({menu_kiri, page}) {
               </Menu.Item>
             </Menu.Items>
           </Menu>
-        </div>
         </div>
     </div>
   )
