@@ -7,7 +7,6 @@ export default function Maps() {
           width="300" 
           height="300" 
           style={{ border: 0 }}
-          allowfullscreen
           loading="lazy" 
           referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
