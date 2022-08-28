@@ -1,4 +1,3 @@
-import { Image } from "@mantine/core"
 import { GiHamburgerMenu } from "react-icons/gi"
 import { Menu } from "@headlessui/react"
 import { useRouter } from "next/dist/client/router"

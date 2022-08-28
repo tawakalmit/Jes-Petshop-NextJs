@@ -1,20 +1,14 @@
-import { Card, Image, Text, Badge, Button, Group, CardSection } from '@mantine/core';
+import Image from "next/image"
 
 export default function Adopsi_card() {
   return (
-    <div className='mb-5 cursor-pointer hover:opacity-70'>
-        <Card shadow="sm" p="lg" radius="md" withBorder>
-        <Card.Section>
-            <Image
-                src="/9.png"
-                width={150}
-                alt="image"
-            />
-        </Card.Section>
-        <Text weight={500} size="xl" mt="md">Kucing Lucu</Text>
-        <Text size="sm">Jenis : Persia</Text>
-        <Text size="sm">Umur : 5 Bulan</Text>
-        </Card>
+    <div className='w-36 h-fit mb-5 cursor-pointer bg-[#3498db] rounded-2xl  hover:opacity-70'>
+        <Image src="/9.png" width={300} height={300} className="rounded-t-2xl" />
+        <div className="pb-2">
+            <p className="text-sm text-white text-center font-semibold">Kucing Lucu</p>
+            <p className="text-sm text-white text-center opacity-70">Jenis : Persia</p>
+            <p className="text-sm text-white text-center opacity-70">Umur : 5 Bulan</p>
+        </div>
     </div>
   )
 }
