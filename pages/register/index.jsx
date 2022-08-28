@@ -1,5 +1,5 @@
 import Jesheader from "../../components/jesheader"
-import { Image } from "@mantine/core"
+import Image from "next/image"
 import CustomInput from "../../components/customInput"
 import { useRouter } from "next/dist/client/router"
 import Custombutton from "../../components/custombutton"
@@ -12,7 +12,9 @@ export default function Register() {
     <>
     <Jesheader judul={"Jes Petshop | Register"} />
     <div className="w-full h-fit bg-[url('/bg.png')]">
-        <Image src="/logo_copy.png" width={150} className="pt-20 mx-auto" />
+        <div className="w-fit mx-auto pt-20">
+        <Image src="/logo_copy.png" width={150} height={80}/>
+        </div>
         <h1 className="font-medium text-white text-3xl mt-5 text-center">Register</h1>
         <form className="mt-7">
 
