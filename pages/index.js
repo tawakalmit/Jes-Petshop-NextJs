@@ -1,12 +1,11 @@
 import Jesheader from "../components/jesheader"
+import Homepage from "./homepage"
 
 export default function Home() {
   return (
     <>
     <Jesheader title="Jes Petshop" />
-    <div className='w-full h-screen flex justify-center items-center'>
-      <h1 className='text-[#1abc9c] text-7xl font-semibold'>Next JS Initialized</h1>
-    </div>
+    <Homepage />
     </>
   )
 }
