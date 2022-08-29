@@ -4,8 +4,10 @@ import Image from "next/image"
 import { GiPlagueDoctorProfile } from "react-icons/gi"
 import CustomInput from "../../components/customInput"
 import Custombutton from "../../components/custombutton"
+import { useRouter } from "next/dist/client/router"
 
 export default function EditProfile() {
+    const router = useRouter();
   return (
     <>
     <Jesheader 
