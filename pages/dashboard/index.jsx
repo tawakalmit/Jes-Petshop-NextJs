@@ -10,7 +10,7 @@ export default function Dashboard() {
     <Adminnav page="Administrator" />
     <div className="bg-[url('/bg.png')] h-screen pt-10 w-full flex justify-evenly">
 
-        <div className="w-36 h-36 flex items-center justify-center rounded-3xl bg-[#3498db]" onClick={() => router.push("/addadoption")}>
+        <div className="w-36 h-36 flex items-center justify-center rounded-3xl bg-[#3498db]" onClick={() => router.push("/adoption_dashboard")}>
             <FaCat size={100} color="#ecf0f1" />
         </div>
 
