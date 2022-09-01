@@ -14,7 +14,7 @@ export default function Adopsi() {
   return (
     <>
     <Jesheader judul="Administrator | Adopsi" />
-    <Adminnav hal="Adopsi" page={<AiFillHome size={25} />} />
+    <Adminnav hal="Adopsi" page={<AiFillHome size={25} />} pageClick={() => router.push('/dashboard')} />
     <div className="bg-[url('/bg.png')] h-full min-h-screen pt-10 w-full">
         <div className="w-10/12 flex flex-wrap mx-auto justify-around">
             <Adopsi_card />
