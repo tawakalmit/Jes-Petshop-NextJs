@@ -10,28 +10,23 @@ export default function AddAdoption() {
   return (
     <div>
         <Jesheader
-        judul="Admin | Tambahkan Adopsi"
+        judul="Admin | Tambahkan Produk"
         />
         <Adminnav 
         page={<BiArrowBack />}
-        hal="Tambah Adopsi"
-        pageClick={() => router.push('/adoption_dashboard')}
+        hal="Tambah Produk"
+        pageClick={() => router.push('/produk_dashboard')}
         />
         <div className="bg-[url('/bg.png')] h-screen pt-5 w-full flex">
             <form className="w-full">
 
                 <CustomInput
-                label="Nama Hewan"
+                label="Nama Produk"
                 type="text"
                 />
 
                 <CustomInput
-                label="Jenis"
-                type="text"
-                />
-
-                <CustomInput
-                label="Umur"
+                label="Harga"
                 type="number"
                 />
 
