@@ -5,12 +5,14 @@ import {FcCellPhone} from "react-icons/fc"
 import {RiWhatsappFill, RiFacebookBoxFill, RiInstagramFill} from "react-icons/ri"
 import {GrMapLocation} from "react-icons/gr"
 import Maps from "../../components/maps"
+import { useRouter } from "next/router"
 
 export default function Contact() {
+    const router = useRouter();
   return (
     <>
     <Jesheader judul={"Jes Petshop | Hubungi Kami"}  />
-    <Navbar menu_kiri={<Image onClick={(e) => router.push('/')} src="/logo_copy.png" width={90} height={50} />} page="Hubungi Kami" />
+    <Navbar menu_kiri={<Image onClick={(e) => router.push('/')} src="/logo_copy.png" width={90} height={50} className="cursor-pointer" />} page="Hubungi Kami" />
     <div className="bg-[url('/bg.png')] h-full min-h-screen pt-10 w-full pb-20">
         <div className="w-fit items-center mx-auto flex mb-3">
             <FcCellPhone size={30} />
@@ -34,9 +36,9 @@ export default function Contact() {
 
         <Maps />
 
-        <div className="w-10/12 items-center mx-auto flex mt-3 mb-3">
+        <div className="w-fit p-3 items-center mx-auto flex mt-3 mb-3">
             <GrMapLocation size={60}/>
-            <p className="font-semibold ml-5"> Jl. Balakang No.86, Sindanglaya, Kec. Cipanas, Kabupaten Cianjur, Jawa Barat 43253</p>
+            <p className="font-semibold ml-5 text-center"> Jl. Balakang No.86, Sindanglaya, Kec. Cipanas, Kabupaten Cianjur, Jawa Barat 43253</p>
         </div>
     </div>
     </>

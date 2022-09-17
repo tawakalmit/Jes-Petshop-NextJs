@@ -11,7 +11,7 @@ export default function Adopsi() {
   return (
     <>
     <Jesheader judul="Jes Petshop | Adopsi" />
-    <Navbar menu_kiri={<Image onClick={(e) => router.push('/')} src="/logo_copy.png" width={90} height={50} />} page="Adopsi" />
+    <Navbar menu_kiri={<Image onClick={(e) => router.push('/')} className="cursor-pointer" src="/logo_copy.png" width={90} height={50} />} page="Adopsi" />
     <div className="bg-[url('/bg.png')] h-full min-h-screen pt-10 w-full">
         <div className="w-10/12 flex flex-wrap mx-auto justify-around">
             <Adopsi_card />
